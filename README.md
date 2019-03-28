@@ -1,5 +1,6 @@
 # Email-App
 Practicing Java and OOP
+CREATING EMAIL ACCOUNT FOR NEW HIRES
 The application should:
 1.Generate an email with this syntax: firstName+lastName@department.company.com
 2.Deteermine the department (sales, dev, accounting), if none leave it blank
