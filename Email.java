@@ -27,7 +27,6 @@ public class Email {
     email = firstName.toLowerCase() + lastName.toLowerCase() + "@" + department.toLowerCase() + "." + companySuffix;
     System.out.println("Your newly generated email is: " + email);
   }
-
   //ask for the department
   private String setDepartment(){
     System.out.println("DEPARTMENT CODES:\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none ");
@@ -49,12 +48,25 @@ public class Email {
     }
     return new String(charPassword);
   }
-
   //set mail box capacity
-
+  public void setMailBoxCapacity(int capacity){
+    this.mailBoxCapacity = capacity;
+  }
   //set alternative email
-
+  public void setAlternateEmail(String altEmail){
+    this.alternativeEmail = altEmail;
+  }
   //change password
-
-  //here we create the objects
+  public void changePassword(String password){
+    this.password = password;
+  }
+  public int getMailCapacity(){
+    return mailBoxCapacity;
+  }
+  public String getAlternativeEmail(){
+    return alternativeEmail;
+  }
+  public String getPassword(){
+    return password;
+  }
 }
